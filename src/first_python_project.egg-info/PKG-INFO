@@ -1,6 +1,23 @@
 Metadata-Version: 2.4
 Name: first-python-project
 Version: 0.1.0
-Summary: Add your description here
-Requires-Python: >=3.12
+Summary: Agentic Opportunity Scout - First Python Project
+Requires-Python: >=3.11
 Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: loguru
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+
+# First Python Project — Agentic Opportunity Scout
+
+A professional Python scaffold with src layout, a Typer CLI, logging, config, and tests.
+
+## Quickstart
+```bash
+# activate venv first, then:
+pip install -e .
+fpp hello
+fpp init-data-dir --base ./data
+pytest -q

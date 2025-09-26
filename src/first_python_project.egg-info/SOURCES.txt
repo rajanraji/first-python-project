@@ -3,6 +3,11 @@ pyproject.toml
 src/first_python_project.egg-info/PKG-INFO
 src/first_python_project.egg-info/SOURCES.txt
 src/first_python_project.egg-info/dependency_links.txt
+src/first_python_project.egg-info/entry_points.txt
+src/first_python_project.egg-info/requires.txt
 src/first_python_project.egg-info/top_level.txt
 src/fpp/_init_.py
 src/fpp/cli.py
+src/fpp/config.py
+src/fpp/log.py
+tests/tests_cli.py

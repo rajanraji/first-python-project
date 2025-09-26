@@ -1,0 +1,5 @@
+typer[all]
+loguru
+pydantic-settings
+python-dotenv
+rich

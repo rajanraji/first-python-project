@@ -1,24 +1,23 @@
-[project]
-name = "first-python-project"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
-
-[dependency-groups]
-dev = [
-    "black>=25.9.0",
-    "pytest>=8.4.2",
-    "ruff>=0.13.2",
-]
-
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "first-python-project"
+version = "0.1.0"
+description = "Agentic Opportunity Scout - First Python Project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "typer[all]",
+  "loguru",
+  "pydantic-settings",
+  "python-dotenv",
+  "rich",
+]
+
 [project.scripts]
-fpp = "fpp.cli:main"
+fpp = "fpp.cli:app"   # exposes `fpp` command via Typer app
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -26,3 +25,10 @@ package-dir = {"" = "src"}
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
